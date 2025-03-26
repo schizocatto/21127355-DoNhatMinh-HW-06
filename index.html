@@ -1,0 +1,35 @@
+v<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Detection Video</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+        /* Định kích thước cho video và canvas */
+        video, canvas {
+            width: 1289px;
+            height: 720px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- Thẻ video đã có sẵn với controls -->
+        <video id="video" controls>
+            <source src="video.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+        </video>
+        <!-- Thẻ canvas để hiển thị kết quả -->
+        <canvas id="canvas" width="1280" height="720"></canvas>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
